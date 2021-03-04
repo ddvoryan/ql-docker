@@ -6,7 +6,7 @@ serverpass=${serverpass:-'private'}
 mappool=${mappool:-'mappool.txt'}
 
 location=${location:-'US Central'}
-name=${name:-"tBA* Turbo CA [$location]"}
+name=${name:-"2young4quake [$location]"}
 
 if [ "$admin" != "" ]; then
   echo "$admin|admin" > ~/.quakelive/27960/access.txt
@@ -21,7 +21,7 @@ stdbuf -oL -eL /home/${USER}/Steam/steamapps/common/Quake\ Live\ Dedicated\ Serv
     +set zmq_rcon_password "quake1337!" \
     +set zmq_rcon_port $rconport \
     +set sv_privateClients 1 \
-    +set sv_privatePassword "$serverpass" \
+    +set g_password "$serverpass" \
     +set sv_mapPoolFile "$mappool" \
     +set zmq_stats_enable 1 \
     +set zmq_stats_password "stats" \
